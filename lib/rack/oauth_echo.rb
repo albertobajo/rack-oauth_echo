@@ -8,8 +8,8 @@ module Rack
       end
       
       def call(env)
-        if valid_header?(env)
-          json_response = auth_request(env) if valid_header?(env)
+        if auth_header?(env)
+          json_response = auth_request(env)
           if json_response.status == 200
             env['rack-oauth_echo.user_hash'] = auth_request(env).body
             @app.call(env)
@@ -23,7 +23,7 @@ module Rack
       
       private
 
-        def valid_header?(env)
+        def auth_header?(env)
           env.has_key?('X-Verify-Credentials-Authorization') ||
           env.has_key?('X-Auth-Service-Provider')
         end
