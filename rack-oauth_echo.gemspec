@@ -4,9 +4,10 @@ require File.expand_path('../lib/rack/oauth_echo/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Alberto Bajo"]
   gem.email         = ["albertobajo@gmail.com"]
-  gem.description   = %q{OAuth Echo authentication by rack middleware}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{OAuth Echo authentication by a rack middleware}
+  gem.summary       = %q{Rack::OAuthEcho it a small, simple middleware for
+    authenticate OAuth Echo requests.}
+  gem.homepage      = "http://github.com/albertobajo/rack-oauth_echo"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
