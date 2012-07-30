@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1/account/verify_credentials.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      authorization:
+      - bad header
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: !binary |-
+        VW5hdXRob3JpemVk
+    headers:
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        TW9uLCAzMCBKdWwgMjAxMiAxMjoyNTowNyBHTVQ=
+      !binary "c3RhdHVz":
+      - !binary |-
+        NDAxIFVuYXV0aG9yaXplZA==
+      !binary "eC1ydW50aW1l":
+      - !binary |-
+        MC4wMDQxMQ==
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG1heC1hZ2U9MzAw
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "d3d3LWF1dGhlbnRpY2F0ZQ==":
+      - !binary |-
+        T0F1dGggcmVhbG09Imh0dHBzOi8vYXBpLnR3aXR0ZXIuY29tIg==
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        az0xMC4zNi4yMy4xMDIuMTM0MzY1MTEwNzQwMDg3MDsgcGF0aD0vOyBleHBp
+        cmVzPU1vbiwgMDYtQXVnLTEyIDEyOjI1OjA3IEdNVDsgZG9tYWluPS50d2l0
+        dGVyLmNvbQ==
+      - !binary |-
+        Z3Vlc3RfaWQ9djElM0ExMzQzNjUxMTA3NDA1NDQ1NzY7IGRvbWFpbj0udHdp
+        dHRlci5jb207IHBhdGg9LzsgZXhwaXJlcz1UaHUsIDMxLUp1bC0yMDE0IDAw
+        OjI1OjA3IEdNVA==
+      - !binary |-
+        X3R3aXR0ZXJfc2Vzcz1CQWg3Q0NJS1pteGhjMmhKUXpvblFXTjBhVzl1UTI5
+        dWRISnZiR3hsY2pvNlJteGhjMmc2T2tac1lYTm8lMjUwQVNHRnphSHNBQmpv
+        S1FIVnpaV1I3QURvUFkzSmxZWFJsWkY5aGRHd3JDRSUyNTJGUzJOYzRBVG9I
+        YVdRaUpUVmslMjUwQU1UaG1PRGM1TjJSa1ptWmxNbU15WkRCbU1HVm1OREl6
+        TkRrM01UUTEtLTA4MGE3NWVmYmM0NWQwY2Y3NDQxODIwOTk2NzJmZDY2YmFl
+        NmYyM2U7IGRvbWFpbj0udHdpdHRlci5jb207IHBhdGg9LzsgSHR0cE9ubHk=
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        TW9uLCAzMCBKdWwgMjAxMiAxMjozMDowNyBHTVQ=
+      !binary "dmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Y29udGVudC1lbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MTAx
+      !binary "c2VydmVy":
+      - !binary |-
+        dGZl
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAxXLwQqAIAwA0F+RnUPp2rXfEGLoIkMczS2I6N+r+3s3kAgL
+        TDCz1ewaq0PTjZqWhEruYvMwgNBh1PVzMYwxYEpsTWM4Scp6LUko/wVr93vn
+        Bs8L+8HgvlkAAAA=
+    http_version: !binary |-
+      MS4x
+  recorded_at: Mon, 30 Jul 2012 12:25:06 GMT
+recorded_with: VCR 2.2.4
